@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Onely</title>
+    <title>wave</title>
     <style>
         svg #Path_15 {
             animation: wave 4s;
@@ -17,6 +17,7 @@
             animation: dot;
             animation-iteration-count: infinite;
             animation-duration: 1300ms;
+            animation-timing-function: linear;
         }
 
         @keyframes wave {
@@ -32,7 +33,8 @@
 
         @keyframes dot {
             0% {
-                transform: translate3d(-1px, 130px, 0);
+                transform: translate3d(0px, 130px, 0);
+                opacity: 1;
             }
 
             10% {
@@ -40,7 +42,7 @@
             }
 
             20% {
-                transform: translate3d(-1px, 96px, 0);
+                transform: translate3d(0px, 96px, 0);
             }
 
             30% {
@@ -48,15 +50,15 @@
             }
 
             40% {
-                transform: translate3d(-1px, 70px, 0);
+                transform: translate3d(0px, 70px, 0);
             }
 
             50% {
-                transform: translate3d(-1px, 57px, 0);
+                transform: translate3d(0px, 57px, 0);
             }
 
             60% {
-                transform: translate3d(-1px, 44px, 0);
+                transform: translate3d(0px, 44px, 0);
             }
 
             70% {
@@ -64,15 +66,18 @@
             }
 
             80% {
-                transform: translate3d(-1px, 18px, 0);
+                transform: translate3d(0px, 18px, 0);
+                opacity: 1;
             }
 
             90% {
                 transform: translate3d(1px, 5px, 0);
+                opacity: 0.3;
             }
 
             100% {
                 transform: translate3d(1px, 0px, 0);
+                opacity: 0;
             }
 
         }
